@@ -1,0 +1,9 @@
+ <div class="card-container">
+  <div class="card" *ngFor="let carro of carros" (click)="exibirDetalhes(carro.key)">
+    <img [src]="carro.img" alt="Foto do carro" class="card-imagem">
+    <h3>{{ carro.titulo }}</h3>
+    <p><strong>Modelo:</strong> {{ carro.modelo }}</p>
+    <p><strong>Ano:</strong> {{ carro.ano }}</p>
+    <p><strong>Autor:</strong> {{ carro.autor }}</p>
+  </div>
+ </div>

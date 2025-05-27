@@ -1,0 +1,32 @@
+<h2>Registros de Memória</h2>
+<form #formulario="ngForm" (ngSubmit)="SalvarFormulario(formulario)" novalidate>
+    <label for="titulo">Título da memória: </label>
+    <input type="text" id="titulo" name="titulo" [(ngModel)]="titulo" placeholder="Meu Fusca 1975" required><br>
+
+    <label for="desc">Descrição da lembrança: </label>
+    <textarea id="desc" name="desc" [(ngModel)]="desc" placeholder="Conte a sua história vivida" required></textarea><br>
+
+    <label for="Modelo">Modelo do veículo: </label>
+    <input type="text" id="modelo" name="modelo" [(ngModel)]="modelo" placeholder="Opala comodoro, Maverick GT" required><br>
+
+    <label for="ano">Ano do veículo: </label>
+    <input type="number" id="ano" name="ano" [(ngModel)]="ano" placeholder="1983" required><br>
+
+    <label for="motor">Motor do veículo: </label>
+    <input type="text" id="motor" name="motor" [(ngModel)]="motor" placeholder="AP 2.0, V8" required><br>
+
+    <label for="conservacao">Estado de conservação: </label>
+    <input type="text" id="conservacao" name="conservacao" [(ngModel)]="conservacao" placeholder="Original, Restaurado" required><br>
+
+    <label for="data">Data da lembrança: </label>
+    <input type="date" id="data" name="data" [(ngModel)]="data" required><br>
+
+    <label for="autor">Autor da lembrança: </label>
+    <input type="text" id="autor" name="autor" [(ngModel)]="autor" placeholder="Digite seu nome aqui" required><br>
+
+    <label for="img">Foto do carro:</label>
+  <input type="file" id="img" name="img" (change)="arquivoSelecionado($event)" accept="image/*" required><br>
+
+    <button type="submit">Salvar Clássico</button>
+
+</form>

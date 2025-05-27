@@ -1,0 +1,18 @@
+<div class="memorias" *ngIf="memoria">
+    <h2>{{memoria.titulo}}</h2>
+    <div class="voltar">
+        <img src="../../../assets/imagens/iconeVoltar.png" alt="Voltar" (click)="voltarPagina()" />
+    </div>
+    <img [src]="memoria.img" alt="imagem do veiculo">
+    <p><strong>Descrição:</strong> {{ memoria.desc }}</p>
+    <p><strong>Modelo:</strong> {{ memoria.modelo }}</p>
+    <p><strong>Ano:</strong> {{ memoria.ano }}</p>
+    <p><strong>Motor:</strong> {{ memoria.motor }}</p>
+    <p><strong>Estado de Conservação:</strong> {{ memoria.conservacao }}</p>
+    <p><strong>Data da Lembrança:</strong> {{ memoria.data }}</p>
+    <p><strong>Autor:</strong> {{ memoria.autor }}</p>
+
+    <button class="btn-edit" (click)="editarMemoria()">Editar</button>
+    <button class="btn-exclui" (click)="excluirMemoria()">Excluir</button>
+
+</div>
