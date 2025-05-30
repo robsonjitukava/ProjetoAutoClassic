@@ -12,10 +12,13 @@ Angular 14+
 Instalação e execução local
 1. Clone o repositório
    git clone https://github.com/robsonjitukava/ProjetoAutoClassic.git
+   
 2.Acesse o diretório do projeto
   cd ProjetoAutoClassic
+  
 3.Instale as dependências do Angular
   npm install
+  
 4.Execute o servidor
   ng serve
 Acesse a aplicação em: http://localhost:4200
