@@ -31,13 +31,21 @@ Acesse a aplicação em: http://localhost:4200
 
 Estrutura das pastas
 src/
+
 ├── app/
+
 │   ├── componentes/
+
 │   │   ├── card/               → Lista os cards com os carros
+
 │   │   ├── memoria-especifica/→ Exibe detalhes de uma memória
+
 │   │   ├── formulario/         → Criação/edição de memórias
+
 │   ├── app-routing.module.ts  → Define as rotas da aplicação
+
 │   ├── app.module.ts          → Configurações principais do app
+
 ├── assets/                    → Imagens e ícones
 
 
