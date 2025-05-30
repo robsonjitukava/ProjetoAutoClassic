@@ -1,27 +1,45 @@
-# Memoteca
+Projeto AutoClassic
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
+O AutoClassic é uma aplicação web desenvolvida com Angular e integrada ao Firebase Realtime Database. O objetivo é permitir o cadastro, visualização, edição, exclusão e busca de memórias automotivas, incluindo veículos clássicos, com informações detalhadas como modelo, ano, motor e autor da lembrança.
 
-## Development server
+Tecnologias utilizadas
+Angular 14+
+- Firebase (Realtime Database)
+- TypeScript
+- HTML5
+- CSS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Instalação e execução local
+1. Clone o repositório
+   git clone https://github.com/robsonjitukava/ProjetoAutoClassic.git
+2.Acesse o diretório do projeto
+  cd ProjetoAutoClassic
+3.Instale as dependências do Angular
+  npm install
+4.Execute o servidor
+  ng serve
+Acesse a aplicação em: http://localhost:4200
 
-## Code scaffolding
+Estrutura das pastas
+src/
+├── app/
+│   ├── componentes/
+│   │   ├── card/               → Lista os cards com os carros
+│   │   ├── memoria-especifica/→ Exibe detalhes de uma memória
+│   │   ├── formulario/         → Criação/edição de memórias
+│   ├── app-routing.module.ts  → Define as rotas da aplicação
+│   ├── app.module.ts          → Configurações principais do app
+├── assets/                    → Imagens e ícones
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+Funcionalidades
+✅ Cadastro de novas memórias (formulário)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+✅ Listagem de memórias em forma de cards
 
-## Running unit tests
+✅ Visualização detalhada da memória
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+✅ Edição e exclusão de registros
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
